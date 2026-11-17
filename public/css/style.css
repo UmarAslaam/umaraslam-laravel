@@ -1,0 +1,40 @@
+body {
+    background: #080d1b;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.custom-navbar {
+    background: linear-gradient(90deg, #160d35, #102d59);
+    padding: 18px 0;
+    border-bottom: 1px solid #34345a;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #cbd5e1 !important;
+    padding: 10px 16px !important;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background: #7c3aed;
+    margin:0px 5px;
+}
+
+.nav-link.active {
+    background: #7c3aed;
+    color: white !important;
+}
+
+h1 {
+    color: white;
+    font-size: 45px;
+}
