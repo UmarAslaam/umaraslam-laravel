@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,19 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/services', function () {
-    return view('services');
-});
-Route::get('/projects', function () {
-    return view('projects');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/', [ProductController::class,"index"]);
+Route::get('/about', [ProductController::class,"about"]);
+Route::get('/services', [ProductController::class,"services"]);
+Route::get('/projects', [ProductController::class,"projects"]);
+Route::get('/contact', [ProductController::class,"contact"]);
+
+
+
 

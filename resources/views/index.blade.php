@@ -57,6 +57,42 @@
     <p>Welcome to our website.</p>
 </div>
 
+<div class="container mt-5">
+    <h2 class="text-center mb-4">User Details</h2>
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Field</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td>{{ $name }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ $email }}</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{{ $age }}</td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td>{{ $city }}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>{{ $address }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
